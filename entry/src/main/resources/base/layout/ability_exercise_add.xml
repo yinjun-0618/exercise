@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text_alignment="horizontal_center"
+        ohos:text="动作添加"
+        ohos:text_size="20fp"></Text>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="胸部动作"
+            ohos:text_size="20fp"/>
+
+
+        <ScrollView
+            ohos:height="100vp"
+            ohos:width="match_parent">
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent">
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+
+            </DirectionalLayout>
+
+
+        </ScrollView>
+
+
+
+
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_parent">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="肩膀动作"
+            ohos:text_size="20fp"></Text>
+        <ScrollView
+            ohos:height="100vp"
+            ohos:width="match_parent">
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent">
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+
+            </DirectionalLayout>
+
+
+        </ScrollView>
+
+
+
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_parent">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="手臂动作"
+            ohos:text_size="20fp"></Text>
+        <ScrollView
+            ohos:height="100vp"
+            ohos:width="match_parent">
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent">
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+
+            </DirectionalLayout>
+
+
+        </ScrollView>
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_parent">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="腿部动作"
+            ohos:text_size="20fp"></Text>
+        <ScrollView
+            ohos:height="100vp"
+            ohos:width="match_parent">
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent">
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent">
+
+                    <Checkbox
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="卧推"
+                        ohos:text_size="25fp" />
+                </DirectionalLayout>
+
+            </DirectionalLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+    </DirectionalLayout>
+
+
+    <Button
+        ohos:id="$+id:exercise_add_button"
+        ohos:text_alignment="horizontal_center"
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="添加"
+        ohos:text_size="25fp">
+
+    </Button>
+
+
+
+
+</DirectionalLayout>
