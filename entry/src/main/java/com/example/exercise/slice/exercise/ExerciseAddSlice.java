@@ -25,9 +25,15 @@ public class ExerciseAddSlice extends AbilitySlice {
         setUIContent(ResourceTable.Layout_ability_exercise_add);
 
         Button buttonAdd = findComponentById(ResourceTable.Id_exercise_add_button);
-        buttonAdd.setClickedListener(component -> {
+        buttonAdd.setClickedListener(component ->terminate());
+    }
 
-//            this.present(new MainAbilitySlice(),new Intent());
-        });
+
+    @Override
+    protected void onActive() {
+        super.onActive();
+        Intent intent1=new Intent();
+        intent1.setParam("key","添加模板信息");
+        setResult(intent1);
     }
 }

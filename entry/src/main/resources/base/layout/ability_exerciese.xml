@@ -17,12 +17,14 @@
            ohos:text="今日训练部位"
            ohos:text_size="15fp"></Text>
 
-       <Text
-           ohos:left_margin="100vp"
-           ohos:height="match_parent"
-           ohos:width="match_content"
-           ohos:text="腿部"
-           ohos:text_size="15fp"></Text>
+       <Picker
+           ohos:id="$+id:date_pick"
+           ohos:height="match_content"
+           ohos:width="match_parent"
+           ohos:text_size="20fp"
+           ohos:selector_item_num="1"
+           ohos:background_element="#C89FDEFF">
+       </Picker>
    </DirectionalLayout>
 
 

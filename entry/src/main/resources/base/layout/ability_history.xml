@@ -35,6 +35,7 @@
             ohos:text_size="15fp"></Text>
 
         <Button
+            ohos:id="$+id:history_button_evaluate1"
             ohos:height="match_parent"
             ohos:width="80vp"
             ohos:text="评价"
@@ -43,6 +44,7 @@
         </Button>
 
         <Button
+            ohos:id="$+id:history_button_check1"
             ohos:left_margin="20vp"
             ohos:height="match_parent"
             ohos:width="80vp"

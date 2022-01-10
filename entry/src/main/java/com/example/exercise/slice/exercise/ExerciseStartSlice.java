@@ -26,8 +26,13 @@ public class ExerciseStartSlice extends AbilitySlice {
         setUIContent(ResourceTable.Layout_ability_exercise_start);
 
         Button buttonEnd=findComponentById(ResourceTable.Id_exercise_start_end);
-        buttonEnd.setClickedListener(component -> {
-//            this.present(new MainAbilitySlice(),new Intent());
-        });
+        buttonEnd.setClickedListener(component ->terminate());
+    }
+
+    protected void onActive() {
+        super.onActive();
+        Intent intent1=new Intent();
+        intent1.setParam("key","添加训练记录");
+        setResult(intent1);
     }
 }

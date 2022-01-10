@@ -4,6 +4,8 @@ import com.example.exercise.ResourceTable;
 import com.example.exercise.provider.TabPageSliderProvider;
 import com.example.exercise.slice.exercise.ExerciseAddSlice;
 import com.example.exercise.slice.exercise.ExerciseStartSlice;
+import com.example.exercise.slice.history.HistoryCheckSlice;
+import com.example.exercise.slice.history.HistoryEvaluateSlice;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.*;
@@ -13,6 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainAbilitySlice extends AbilitySlice {
+    private static int intentAddPosition=11;
+    private static int intentExercisePosition=12;
+
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
@@ -87,12 +92,22 @@ public class MainAbilitySlice extends AbilitySlice {
 
     }
 
+
     private void initMyinformation(PageSlider pageSlider) {
     }
 
 
     //初始化历史记录
     private void initHistory(PageSlider pageSlider) {
+        Button buttonEva = findComponentById(ResourceTable.Id_history_button_evaluate1);
+        buttonEva.setClickedListener(component -> {
+            this.present(new HistoryEvaluateSlice(),new Intent());
+        });
+
+        Button buttonCheck = findComponentById(ResourceTable.Id_history_button_check1);
+        buttonCheck.setClickedListener(component -> {
+            this.present(new HistoryCheckSlice(),new Intent());
+        });
     }
 
     //初始化训练界面
@@ -101,19 +116,39 @@ public class MainAbilitySlice extends AbilitySlice {
         //添加动作
         Button buttonAdd = findComponentById(ResourceTable.Id_exercise_add);
         buttonAdd.setClickedListener(component -> {
-        this.present(new ExerciseAddSlice(),new Intent());
+        this.presentForResult(new ExerciseAddSlice(),new Intent(),intentAddPosition);
         });
 
 
         Button buttonStart = findComponentById(ResourceTable.Id_exercise_start);
         buttonStart.setClickedListener(component -> {
-            this.present(new ExerciseStartSlice(),new Intent());
+            this.presentForResult(new ExerciseStartSlice(),new Intent(),intentExercisePosition);
         });
     }
 
     @Override
     public void onActive() {
         super.onActive();
+    }
+
+
+    /*
+    结果回调函数
+     */
+    @Override
+    protected void onResult(int requestCode, Intent resultIntent) {
+       if(requestCode==intentAddPosition){
+           String key = resultIntent.getStringParam("key");
+           System.out.println(key);
+           System.out.println("添加动作成功");
+       }
+
+       if(requestCode==intentExercisePosition){
+           String key = resultIntent.getStringParam("key");
+           System.out.println(key);
+           System.out.println("新的训练记录");
+       }
+
     }
 
     @Override

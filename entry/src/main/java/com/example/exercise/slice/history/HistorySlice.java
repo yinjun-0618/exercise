@@ -3,6 +3,8 @@ package com.example.exercise.slice.history;
 import com.example.exercise.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
+import ohos.agp.components.Button;
+import ohos.agp.components.Component;
 
 /**
  * All rights Reserved, Designed By www.super-master.cn
@@ -20,5 +22,14 @@ public class HistorySlice extends AbilitySlice {
     protected void onStart(Intent intent) {
         super.onStart(intent);
         setUIContent(ResourceTable.Layout_ability_history);
+    }
+
+    @Override
+    protected void onActive() {
+        super.onActive();
+
+
+
+
     }
 }
