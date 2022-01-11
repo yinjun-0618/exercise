@@ -42,7 +42,7 @@ public class  DatabaseUtil {
      * @param s 查询的值
      * @return
      */
-    public static List<OrmObject> userQuerry(Context context,OrmObject ormObject, String filed,String s){
+    public static List<OrmObject> querry(Context context,OrmObject ormObject, String filed,String s){
         OrmContext context1 = init(context);
         OrmPredicates query = context1.where(ormObject.getClass()).equalTo(filed, s);
         return context1.query(query);
