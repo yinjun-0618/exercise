@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+
+
+    <DirectionalLayout
+        ohos:orientation="vertical"
+        ohos:height="match_content"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:orientation="horizontal"
+            ohos:height="match_content"
+            ohos:width="match_parent">
+            <Text
+                ohos:height="match_content"
+                ohos:text="运动评价"
+                ohos:width="match_content"
+                ohos:text_size="20fp">
+            </Text>
+
+            <Text
+                ohos:left_margin="120vp"
+                ohos:height="match_content"
+                ohos:text="ssr"
+                ohos:width="match_content"
+                ohos:text_size="20fp">
+            </Text>
+
+
+        </DirectionalLayout>
+
+        <Text
+            ohos:top_margin="5vp"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:multiple_lines="true"
+            ohos:text="运动与不运动的影响通常运动量大的人，心脏更强壮，因此心率较常人慢，肺活量也更大。但不能一味追求增加运动量，因为在锻炼时只有运动量保持适宜，才能收到较好的效果，运动量过小过大都不行。"
+            ohos:text_size="20fp">
+
+
+
+        </Text>
+
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

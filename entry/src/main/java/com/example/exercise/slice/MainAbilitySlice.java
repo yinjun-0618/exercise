@@ -6,6 +6,8 @@ import com.example.exercise.slice.exercise.ExerciseAddSlice;
 import com.example.exercise.slice.exercise.ExerciseStartSlice;
 import com.example.exercise.slice.history.HistoryCheckSlice;
 import com.example.exercise.slice.history.HistoryEvaluateSlice;
+import com.example.exercise.slice.myinformation.MyIfmBodySlice;
+import com.example.exercise.slice.myinformation.MyIfmChangePswSlice;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.*;
@@ -35,7 +37,7 @@ public class MainAbilitySlice extends AbilitySlice {
         List<Integer> list=new ArrayList<>();
         list.add(ResourceTable.Layout_ability_exerciese);
         list.add(ResourceTable.Layout_ability_history);
-        list.add(ResourceTable.Layout_ability_myinformation);
+        list.add(ResourceTable.Layout_ability_myifm);
         PageSlider pageSlider = findComponentById(ResourceTable.Id_page_slider);
         pageSlider.setProvider(new TabPageSliderProvider(list,this));
 
@@ -94,6 +96,16 @@ public class MainAbilitySlice extends AbilitySlice {
 
 
     private void initMyinformation(PageSlider pageSlider) {
+        Button buttonChange=findComponentById(ResourceTable.Id_myInformation_button_changePsw);
+        buttonChange.setClickedListener(component -> {
+            this.present(new MyIfmChangePswSlice(),new Intent());
+        });
+
+        Button buttonBody=findComponentById(ResourceTable.Id_myInformation_button_body);
+        buttonBody.setClickedListener(component -> {
+            this.present(new MyIfmBodySlice(),new Intent());
+        });
+
     }
 
 

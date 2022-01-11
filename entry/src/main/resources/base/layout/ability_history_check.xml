@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:text_alignment="horizontal_center"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="具体运动数据分析"
+        ohos:text_size="25fp">
+    </Text>
+
+
+    <TableLayout
+        ohos:orientation="horizontal"
+        ohos:height="80vp"
+        ohos:column_count="3"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:height="80vp"
+            ohos:width="match_content">
+            <Text
+                ohos:text_alignment="vertical_center"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="20fp"
+                ohos:text="运动时长">
+
+            </Text>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="15fp"
+                ohos:text="3分20秒">
+
+            </Text>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:alignment="horizontal_center"
+            ohos:left_margin="60vp"
+            ohos:height="80vp"
+            ohos:width="match_content">
+            <Text
+                ohos:text_alignment="vertical_center"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="20fp"
+                ohos:text="平均心率">
+
+            </Text>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="15fp"
+                ohos:text="120">
+
+            </Text>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:left_margin="60vp"
+            ohos:alignment="horizontal_center"
+            ohos:height="80vp"
+            ohos:width="match_content">
+            <Text
+               ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="20fp"
+                ohos:text="平均血氧浓度">
+
+            </Text>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="15fp"
+                ohos:text="98%">
+
+            </Text>
+
+        </DirectionalLayout>
+
+
+
+    </TableLayout>
+
+    <DirectionalLayout
+        ohos:top_margin="50vp"
+        ohos:height="150vp"
+        ohos:width="match_parent">
+        <Text
+            ohos:text_alignment="horizontal_center"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="心率图"
+            ohos:text_size="25fp">
+        </Text>
+
+
+
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:top_margin="50vp"
+        ohos:height="150vp"
+        ohos:width="match_parent">
+        <Text
+            ohos:text_alignment="horizontal_center"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="血氧图"
+            ohos:text_size="25fp">
+        </Text>
+
+
+
+
+    </DirectionalLayout>
+
+
+</DirectionalLayout>

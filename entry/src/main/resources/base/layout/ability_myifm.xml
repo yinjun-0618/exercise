@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:text_alignment="horizontal_center"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="我的信息">
+    </Text>
+
+    <DirectionalLayout
+        ohos:alignment="horizontal_center"
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+           ohos:height="match_content"
+            ohos:width="match_content">
+
+            <Button
+                ohos:id="$+id:myInformation_button_changePsw"
+
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text="修改密码"
+                ohos:text_size="20fp">
+
+            </Button>
+        </DirectionalLayout>
+        <DirectionalLayout
+            ohos:top_margin="5vp"
+            ohos:height="match_content"
+            ohos:width="match_content">
+
+            <Button
+                ohos:id="$+id:myInformation_button_body"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text="身体数据"
+                ohos:text_size="20fp">
+
+            </Button>
+        </DirectionalLayout>
+        <DirectionalLayout
+            ohos:top_margin="5vp"
+            ohos:height="match_content"
+            ohos:width="match_content">
+
+            <Button
+                ohos:id="$+id:myInformation_button_sync"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text="同步训练数据"
+                ohos:text_size="20fp">
+
+            </Button>
+        </DirectionalLayout>
+
+
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

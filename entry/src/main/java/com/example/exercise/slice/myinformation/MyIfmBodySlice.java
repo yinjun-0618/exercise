@@ -8,17 +8,17 @@ import ohos.aafwk.content.Intent;
  * All rights Reserved, Designed By www.super-master.cn
  *
  * @ProjectName: exercise
- * @Package: com.example.exercise.slice
- * @ClassName: MyInformation
+ * @Package: com.example.exercise.slice.myinformation
+ * @ClassName: MyIfmBodySlice
  * @Description: []
  * <p> </p>
  * @Author: [Lance Ting]
- * @Date: 2022/1/9 17:47
+ * @Date: 2022/1/10 10:48
  **/
-public class MyInformation extends AbilitySlice {
+public class MyIfmBodySlice extends AbilitySlice {
     @Override
     protected void onStart(Intent intent) {
         super.onStart(intent);
-        setUIContent(ResourceTable.Layout_ability_myinformation);
+    setUIContent(ResourceTable.Layout_ability_myifmbody);
     }
 }
