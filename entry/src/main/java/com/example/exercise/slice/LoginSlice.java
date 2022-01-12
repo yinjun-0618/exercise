@@ -14,6 +14,7 @@ import ohos.agp.components.Button;
 import ohos.agp.components.Text;
 import ohos.agp.components.TextField;
 import ohos.data.orm.OrmObject;
+import ohos.data.preferences.Preferences;
 
 import java.util.List;
 
@@ -43,6 +44,11 @@ public class LoginSlice extends AbilitySlice {
             if(!username.isEmpty()){
                 User user= (User) username.get(0);
                 if(user.getPassword().equals(pswText.getText())){
+
+                    //用户名存入轻量级数据库方便使用
+                    Preferences preferences = DataBaseInit.preferences;
+                    preferences.putString("username",user.getUsername());
+                    preferences.flush();  // 异步方法
                     Intent intent1=new Intent();
                     this.present(new MainAbilitySlice(),intent1);
                 }else{

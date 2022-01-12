@@ -1,10 +1,20 @@
 package com.example.exercise.Utils;
 
+import com.example.exercise.ResourceTable;
 import com.example.exercise.beans.MovementAll;
 import com.example.exercise.beans.User;
 import com.example.exercise.beans.UserInformation;
 import com.example.exercise.beans.UserModel;
+import ohos.agp.components.Button;
+import ohos.agp.components.DirectionalLayout;
+import ohos.agp.components.LayoutScatter;
+import ohos.agp.components.Text;
 import ohos.app.Context;
+import ohos.data.DatabaseHelper;
+import ohos.data.orm.OrmObject;
+import ohos.data.preferences.Preferences;
+
+import java.util.List;
 
 /**
  * All rights Reserved, Designed By www.super-master.cn
@@ -21,6 +31,9 @@ import ohos.app.Context;
  * 数据库的初始化
  **/
 public class DataBaseInit {
+    public static Preferences preferences;//固定提供
+
+
     /**
      * 所有的动作初始化
      * @param context
@@ -65,25 +78,10 @@ public class DataBaseInit {
      * @param context
      */
     public static void UserModelInit(Context context){
-    //        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","上斜杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃片夹胸"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","深蹲"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//        DatabaseUtil.insert(context,new UserModel("123","胸部","杠铃卧推"));
-//
-        String[] kind={"胸部","腿部","肩部","手臂","腹部"};
-        String[] movement={"杠铃卧推" ,"上斜杠铃卧推" ,"杠铃片夹胸", "深蹲" ,"哑铃深蹲" ,"哈克机深蹲", "器械倒蹬" ,"哑铃推肩 " ,"侧平举" ,
-                "哑铃弯举" ,"机械弯举" ,"哑铃过头臂屈伸" ,"器械卷腹" ,"绳索卷腹" ,"空中单车"};
+
+        String[] kind={"胸部","背部","腿部","肩部","手臂","腹部","有氧"};
+        String[] movement={"杠铃卧推" ,"上斜杠铃卧推" ,"杠铃片夹胸","杠铃划船","高位下拉","硬拉", "深蹲" ,"哑铃深蹲" ,"哈克机深蹲", "器械倒蹬" ,"哑铃推肩 " ,"侧平举" ,
+                "哑铃弯举" ,"机械弯举" ,"哑铃过头臂屈伸" ,"器械卷腹" ,"绳索卷腹" ,"空中单车","跑步","波比跳","椭圆机"};
         for(int i=0;i<movement.length;i++){
             UserModel userModel=new UserModel("123",kind[i/3],movement[i]);
             DatabaseUtil.insert(context,userModel);
@@ -91,6 +89,16 @@ public class DataBaseInit {
 
     }
 
+
+    /**
+     * 初始化轻量级数据库
+     */
+    public static void PrefenceInit(Context context){
+           DatabaseHelper databaseHelper = new DatabaseHelper(context); // context入参类型为ohos.app.Context。
+        String fileName = "small_store"; // fileName表示文件名，其取值不能为空，也不能包含路径，默认存储目录可以通过context.getPreferencesDir()获取。
+        Preferences preferences1 = databaseHelper.getPreferences(fileName);
+        preferences=preferences1;
+    }
 
 
 

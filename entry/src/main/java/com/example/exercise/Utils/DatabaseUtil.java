@@ -59,8 +59,8 @@ public class  DatabaseUtil {
         OrmContext context1 = init(context);
         OrmPredicates predicates = context1.where(ormObject.getClass());
         predicates.equalTo(filed, s);
-        List<User> users = context1.query(predicates);
-        User user = users.get(0);
+        List<OrmObject> users = context1.query(predicates);
+        OrmObject user = users.get(0);
         context1.delete(user);
         context1.flush();
     }

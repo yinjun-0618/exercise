@@ -1,6 +1,7 @@
 package com.example.exercise;
 
 import com.example.exercise.Utils.DataBaseInit;
+import com.example.exercise.Utils.DatabaseUtil;
 import com.example.exercise.slice.LoginSlice;
 import ohos.aafwk.ability.Ability;
 import ohos.aafwk.content.Intent;
@@ -13,6 +14,7 @@ public class MainAbility extends Ability {
        DataBaseInit.UserInit(this);
        DataBaseInit.UserInformationInit(this);
        DataBaseInit.MovementAllInit(this);
+       DataBaseInit.PrefenceInit(this);
         super.setMainRoute(LoginSlice.class.getName());
     }
 }

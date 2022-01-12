@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:top_margin="15vp"
+    ohos:height="40vp"
+    ohos:orientation="horizontal"
+    ohos:width="match_parent">
+
+
+    <Text
+        ohos:id="$+id:exercise_item_number"
+        ohos:height="match_parent"
+        ohos:width="50vp"
+        ohos:text_alignment="horizontal_center"
+        ohos:text="动作一"
+        ohos:text_size="15fp"></Text>
+
+    <Text
+        ohos:id="$+id:exercise_item_name"
+        ohos:height="match_parent"
+        ohos:text_alignment="horizontal_center"
+        ohos:width="220vp"
+        ohos:text="卧推"
+        ohos:text_size="15fp"></Text>
+
+    <Button
+        ohos:id="$+id:exercsie_item_delete"
+        ohos:height="match_parent"
+        ohos:text_alignment="horizontal_center"
+        ohos:width="50vp"
+        ohos:text="删除"
+        ohos:background_element="$graphic:background_button_common"
+        ohos:text_size="15fp">
+    </Button>
+
+</DirectionalLayout>

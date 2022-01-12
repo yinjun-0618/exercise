@@ -5,17 +5,6 @@
  "1.0.1": {
   "profileList": [
    {
-    "id": "P40",
-    "deviceType": "phone",
-    "width": 1080,
-    "height": 2340,
-    "shape": "rect",
-    "dpi": 480,
-    "orientation": "portrait",
-    "language": "zh_CN",
-    "colorMode": "light"
-   },
-   {
     "id": "MateX2",
     "deviceType": "phone",
     "width": 2200,
@@ -34,6 +23,17 @@
     "shape": "circle",
     "dpi": 320,
     "orientation": "landscape",
+    "language": "zh_CN",
+    "colorMode": "light"
+   },
+   {
+    "id": "P40",
+    "deviceType": "phone",
+    "width": 1080,
+    "height": 2340,
+    "shape": "rect",
+    "dpi": 480,
+    "orientation": "portrait",
     "language": "zh_CN",
     "colorMode": "light"
    }

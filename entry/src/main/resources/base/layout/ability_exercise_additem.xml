@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Checkbox
+        ohos:id="$+id:exercise_additem_check"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="卧推"
+        ohos:text_size="25fp" />
+
+</DirectionalLayout>

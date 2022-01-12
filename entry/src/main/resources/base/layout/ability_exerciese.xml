@@ -18,173 +18,29 @@
            ohos:text_size="15fp"></Text>
 
        <Picker
-           ohos:id="$+id:date_pick"
+           ohos:wheel_mode_enabled="true"
+           ohos:id="$+id:exercise_kind_pick"
            ohos:height="match_content"
            ohos:width="match_parent"
-           ohos:text_size="20fp"
+           ohos:selected_text_size="20fp"
            ohos:selector_item_num="1"
            ohos:background_element="#C89FDEFF">
        </Picker>
    </DirectionalLayout>
 
-
     <DirectionalLayout
-        ohos:top_margin="15vp"
-        ohos:height="40vp"
-        ohos:orientation="horizontal"
+        ohos:id="$+id:exercise_listDirection"
+        ohos:height="match_content"
         ohos:width="match_parent">
 
-        <Text
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="动作一"
-            ohos:text_size="15fp"></Text>
 
-        <Text
-            ohos:left_margin="100vp"
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="卧推"
-            ohos:text_size="15fp"></Text>
 
-        <Button
-            ohos:left_margin="100vp"
-
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="删除"
-            ohos:background_element="$graphic:background_button_common"
-            ohos:text_size="15fp">
-        </Button>
 
     </DirectionalLayout>
 
 
-    <DirectionalLayout
-        ohos:top_margin="15vp"
-        ohos:height="40vp"
-        ohos:orientation="horizontal"
-        ohos:width="match_parent">
 
-        <Text
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="动作一"
-            ohos:text_size="15fp"></Text>
-
-        <Text
-            ohos:left_margin="100vp"
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="卧推"
-            ohos:text_size="15fp"></Text>
-
-        <Button
-            ohos:left_margin="100vp"
-
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="删除"
-            ohos:background_element="$graphic:background_button_common"
-            ohos:text_size="15fp">
-        </Button>
-
-    </DirectionalLayout>
-
-    <DirectionalLayout
-        ohos:top_margin="15vp"
-        ohos:height="40vp"
-        ohos:orientation="horizontal"
-        ohos:width="match_parent">
-
-        <Text
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="动作一"
-            ohos:text_size="15fp"></Text>
-
-        <Text
-            ohos:left_margin="100vp"
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="卧推"
-            ohos:text_size="15fp"></Text>
-
-        <Button
-            ohos:left_margin="100vp"
-
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="删除"
-            ohos:background_element="$graphic:background_button_common"
-            ohos:text_size="15fp">
-        </Button>
-
-    </DirectionalLayout>
-
-    <DirectionalLayout
-        ohos:top_margin="15vp"
-        ohos:height="40vp"
-        ohos:orientation="horizontal"
-        ohos:width="match_parent">
-
-        <Text
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="动作一"
-            ohos:text_size="15fp"></Text>
-
-        <Text
-            ohos:left_margin="100vp"
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="卧推"
-            ohos:text_size="15fp"></Text>
-
-        <Button
-            ohos:left_margin="100vp"
-
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="删除"
-            ohos:background_element="$graphic:background_button_common"
-            ohos:text_size="15fp">
-        </Button>
-
-    </DirectionalLayout>
-
-    <DirectionalLayout
-        ohos:top_margin="15vp"
-        ohos:height="40vp"
-        ohos:orientation="horizontal"
-        ohos:width="match_parent">
-
-        <Text
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="动作一"
-            ohos:text_size="15fp"></Text>
-
-        <Text
-            ohos:left_margin="100vp"
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="卧推"
-            ohos:text_size="15fp"></Text>
-
-        <Button
-            ohos:left_margin="100vp"
-
-            ohos:height="match_parent"
-            ohos:width="match_content"
-            ohos:text="删除"
-            ohos:background_element="$graphic:background_button_common"
-            ohos:text_size="15fp">
-        </Button>
-
-    </DirectionalLayout>
-
-
+<!--    自定义添加按钮-->
     <DirectionalLayout
         ohos:top_margin="15vp"
         ohos:height="40vp"
@@ -205,6 +61,7 @@
     </DirectionalLayout>
 
 
+<!--    开始训练按钮-->
     <DirectionalLayout
         ohos:top_margin="15vp"
         ohos:height="40vp"
